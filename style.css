@@ -356,12 +356,17 @@ section {
 .person img {
     width: 80px;
 }
-.side-pic img {
-    width: 100%
+.side-pic {
+    overflow: hidden;
+    border-radius: 0.8rem;
 }
-.side-pic img:hover {
-    transform: scale(0.99);
-    transition: 0.5s;
+.side-pic img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 800ms;
+}
+.side-pic:hover img {
+    transform: scale(1.1);
 }
 
 .talk-people {
