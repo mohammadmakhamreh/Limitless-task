@@ -399,3 +399,53 @@ section {
     opacity: 0.6;
 }
 
+
+@media(max-width: 1228px) {
+
+
+    .main-container {
+        h1 {
+            font-size: 1rem ;
+        }
+        p {
+            font-size: 0.5;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .under-line {
+            font-size: 0.6rem;
+            border: none;
+        }
+        h2 {
+            font-size: 0.8rem;
+        }
+    }
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .companies-logos {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+
+    
+.benefits-types {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.people-talk {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.side-pic {
+    width: 100%;
+}
+}
