@@ -17,7 +17,7 @@ body {
     background-color: #f1eefa;
     justify-content: center;
     align-items: center;
- 
+
 }
 
 button input{
@@ -25,6 +25,7 @@ button input{
 }
 
 .sign-up {
+    min-width: 15rem;
     position: absolute;
     top: -80%;
     left: 50%;
@@ -34,24 +35,17 @@ button input{
     padding: 1rem;
     border-radius: 1rem;
     z-index: 2;
-    transition: transform 0.4s, top 0.4;
-    visibility: hidden;
+    display: none;
 }
 .open-sign-up {
     top: -19%;
     left: 50%;
     transform: translate(-50%,50%) scale(1);
-    visibility: visible;
-
+    display: block;
 }
 .sign-up label {
-    font-size: 0.7rem;
-}
-
-fieldset {
-    padding: 0.33rem;
-    font-size: 0.7rem;    
-    border-radius: 0.4rem;
+    font-size: 0.6rem;
+    padding-right: 0.5rem;
 }
 
 .sign-up h3 {
@@ -65,34 +59,24 @@ fieldset {
 }
 
 .sign-up input {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     background-color: transparent;
     border: 1px solid linear-gradient(#0000e8,#0000e7, #cf3e6d,#e04468,#e04468);;
     padding: 10px 50px;
     border-radius: 10px;
     margin-top: 15px;
+    margin-right: 1rem;
 
 }
 
 .inputs {
-    border: 1px solid #0000e8;
-    padding-left: 0px;
-/*     border: 1px solid black;
- */}
+    border: 1px solid #0000e8; 
+}
+
 .sign-up table, tr, td {
     column-gap: 2rem;
 }
 
-/* .username-set {
-    
-}
-.email-set {
-    display: none;
-
-}
-.password-set {
-    display: none;
-} */
 
 .sign-up button {
     background-color: transparent;
@@ -106,8 +90,8 @@ fieldset {
 .sign-up button:hover {
     background: -webkit-linear-gradient(320deg,#0000e8,#0000e7, #cf3e6d,#e04468,#e04468);
     color:white;
-    border: transparent;
     font-weight: 300;
+    border-color: white;
 }
 #position {
     font-size: 0.5rem;
