@@ -98,6 +98,7 @@ button input{
     background-color: transparent;
     padding: 0.2rem;
     border: none;
+
 }
 section {
     max-height: 100%;
@@ -398,6 +399,48 @@ section {
     font-size: 0.6rem;
     opacity: 0.6;
 }
+
+
+
+/* replacing the table form by grid. */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 26px;
+    column-gap: 4px;
+    align-items: center;
+}
+
+
+
+
+
+.form-input input,
+.form-input select {
+    width: 100%;
+}
+
+.form-submit {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 16px;
+}
+
+#gender {
+    display: flex;
+    align-items: center;
+}
+#gender input {
+    margin: 0;
+    width: 15%;
+    padding: 0;
+    outline: 0;
+}
+
+
+
+
 
 
 @media(max-width: 1228px) {
