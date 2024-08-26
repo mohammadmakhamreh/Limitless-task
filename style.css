@@ -350,7 +350,7 @@ section {
 
 .people-talk {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.9fr 1fr;
     column-gap: 1.5rem;
 }
 
@@ -374,8 +374,8 @@ section {
     background-color: white;
     border-radius: 0.5rem;
     display: flex;
-    padding: 0.6rem;
-    gap: 2rem;
+    padding: 0rem 1.6rem;
+    gap: 1.5rem;
     align-items: center;
     align-content: center;
 }
@@ -639,6 +639,11 @@ section {
 @media(max-width: 1228px) {
 
 
+
+    section {
+        margin: 0.4rem;
+    }
+
     .main-container {
         h1 {
             font-size: 1rem ;
@@ -666,9 +671,6 @@ section {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-
-
     
 .benefits-types {
     display: flex;
@@ -681,8 +683,48 @@ section {
     flex-direction: column;
     row-gap: 1rem;
 }
+
+.talk-people {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.person {
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+}
+
+.benefit-box p{
+    text-align: center;
+}
+
 .side-pic {
     width: 100%;
 }
+
+.benefit-box {
+    align-items: center;
+    border-right: none;
+}
+
+.sign-up {
+    align-self: center;
+    padding-top: 5rem;
+}
+
+
+.open-sign-up {
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(1);
+    display: block;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
 }
 
