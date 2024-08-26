@@ -16,70 +16,64 @@
         <h3>Sign Up</h3>
     
         <form action="#">
-            <table>
-                <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-
-                        <td>
-                            <label for="username">Username</label>
-                        </td>
-                        <td>
-                            <input type="text" placeholder="Username" class="inputs" required></td>
-                        </tr>
-                    <tr>
-                        <td>
-                            <label for="password">Password</label>
-                        </td>
-                        <td>
-                                <input type="password" placeholder="Password" class="inputs" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="email">Email</label></td>
-                        <td>
-                                <input type="email" placeholder="Email" class="inputs" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="gender">Gender</label></td>
-                        <td><div id="gender">
-                            <input type="radio" value="male" name="gender" id="gender">
-                            <label for="male">Male</label>
-                            <input type="radio" name="gender" value="female" id="gender">
-                            <label for="female">Female</label>
-                        </div>
-                    </td>
-                    </tr>
-                    <tr>
-                        <td><label for="position">Position</label></td>
-                        <td><select name="postion" id="position">
-                            <optgroup label="Web">
-                                <option value="frontend">Frontend</option>
-                                <option value="backend">Backend</option>
-                                <option value="full">Fullstack</option>
-                            </optgroup>
-                            <optgroup label="Mobile">
-                                <option value="android">Andriod</option>
-                                <option value="IOS">IOS</option>
-                            </optgroup>
-                        </select></td>
-                    </tr>
-                
-                </tbody>
-            </table>
-            <button type="submit">Sign Up</button>
-            <button type="reset" onclick="closePopup()">Close</button>
+            <div class="form-grid">
+                <div class="form-label">
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="Username" id="username" class="inputs" required>
+                </div>
         
-            <br>
-
+                <div class="form-label">
+                    <label for="password">Password</label>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Password" id="password" class="inputs" required>
+                </div>
+        
+                <div class="form-label">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-input">
+                    <input type="email" placeholder="Email" id="email" class="inputs" required>
+                </div>
+        
+                <div class="form-label">
+                    <label for="gender" id="gender">Gender</label>
+                </div>
+                <div class="form-input">
+                    <div id="gender">
+                        <input type="radio" value="male" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+        
+                <div class="form-label">
+                    <label for="position">Position</label>
+                </div>
+                <div class="form-input">
+                    <select name="position" id="position">
+                        <optgroup label="Web">
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="full">Fullstack</option>
+                        </optgroup>
+                        <optgroup label="Mobile">
+                            <option value="android">Android</option>
+                            <option value="IOS">iOS</option>
+                        </optgroup>
+                    </select>
+                </div>
+        
+                <div class="form-submit">
+                    <button type="submit">Sign Up</button>
+                    <button type="reset" onclick="closePopup()">Close</button>
+                </div>
+            </div>
         </form>
+        
     </div>
 
     <!-- First Section -->
